@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Игра</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #gameCanvas {
+            /* width: 640px;
+            height: 360px; */
+            /* border: 1px solid black; */
+        }
+        #scoreboard {
+            text-align: center;
+        }
+        #scores {
+            font-size: 600%;
+            margin: 0;
+            padding: 0;
+        }
+        /* #title {}
+        #winner-board {} */
+    </style>
+</head>
+<body>
+    <div id="gameCanvas"></div>
+    <div id="scoreboard">
+        <h1 id="scores">0-0</h1>
+        <h1 id="title">пин-понг</h1>
+        <h2 id="winner-board"></h2>
+        <h3>А - перемещение влево, D - перемещение вправо</h3>
+    </div>
+
+
+    <script src="three.min.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
